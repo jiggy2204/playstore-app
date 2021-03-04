@@ -3,7 +3,7 @@ const morgan = require("morgan");
 const cors = require("cors");
 
 const app = express();
-const playstoreapps = require("/playstore-data.js");
+const playstoreapps = require("./playstore-data.js");
 
 app.use(morgan("common")); // let's see what 'common' format looks like
 app.use(cors());
